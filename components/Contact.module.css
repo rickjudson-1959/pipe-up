@@ -1,0 +1,190 @@
+.inner {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.card {
+  background: linear-gradient(135deg, var(--navy-mid) 0%, var(--navy-deep) 100%);
+  border: 0.5px solid var(--border2);
+  border-radius: 20px;
+  padding: 3.5rem;
+  margin-top: 2rem;
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  height: 300px;
+  background: radial-gradient(ellipse, rgba(204, 85, 0, 0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.cardTitle {
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.75rem;
+}
+
+.cardSub {
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 2.5rem;
+  line-height: 1.7;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.group label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.group input,
+.group select,
+.group textarea {
+  background: rgba(255, 255, 255, 0.05);
+  border: 0.5px solid var(--border2);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  font-family: var(--ff);
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--white);
+  outline: none;
+  transition: border-color 0.2s, background 0.2s;
+  width: 100%;
+}
+
+.group input::placeholder,
+.group textarea::placeholder {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.group input:focus,
+.group select:focus,
+.group textarea:focus {
+  border-color: var(--orange);
+  background: rgba(204, 85, 0, 0.06);
+}
+
+.group select option {
+  background: #002244;
+  color: white;
+}
+
+.group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.submit {
+  width: 100%;
+  padding: 1rem;
+  font-family: var(--ff);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: var(--orange);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+  margin-top: 0.5rem;
+}
+
+.submit:hover:not(:disabled) {
+  background: var(--orange-lt);
+  transform: translateY(-1px);
+}
+
+.submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.note {
+  text-align: center;
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.3);
+  margin-top: 1rem;
+}
+
+.errorMsg {
+  font-size: 0.8rem;
+  color: #ff6b6b;
+  padding: 0.75rem 1rem;
+  background: rgba(255, 107, 107, 0.1);
+  border: 0.5px solid rgba(255, 107, 107, 0.3);
+  border-radius: 8px;
+}
+
+.errorMsg a {
+  color: #ff9999;
+}
+
+.success {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.successIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(26, 138, 74, 0.2);
+  border: 1px solid rgba(26, 138, 74, 0.5);
+  color: #4ade80;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.success h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.success p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+@media (max-width: 600px) {
+  .card { padding: 2rem 1.5rem; }
+  .row { grid-template-columns: 1fr; }
+}

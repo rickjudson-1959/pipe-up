@@ -1,0 +1,84 @@
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 3rem;
+  background: rgba(0, 34, 68, 0.92);
+  backdrop-filter: blur(14px);
+  border-bottom: 0.5px solid var(--border);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.brandText {
+  line-height: 1.1;
+}
+
+.brandName {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: var(--white);
+}
+
+.brandTag {
+  display: block;
+  font-size: 0.52rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--orange);
+}
+
+.links {
+  display: flex;
+  gap: 2.25rem;
+  align-items: center;
+}
+
+.links a {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.65);
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  transition: color 0.2s;
+}
+
+.links a:hover {
+  color: var(--white);
+}
+
+.cta {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: var(--orange);
+  color: var(--white);
+  border: none;
+  border-radius: 6px;
+  padding: 0.55rem 1.4rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.cta:hover {
+  background: var(--orange-lt);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 900px) {
+  .nav { padding: 0.9rem 1.5rem; }
+  .links { display: none; }
+}
