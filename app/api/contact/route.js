@@ -27,7 +27,7 @@ export async function POST(request) {
     // Send email via Resend
     const resend = new Resend(process.env.RESEND_API_KEY);
     await resend.emails.send({
-      from: 'Pipe-Up <noreply@pipe-up.ca>',
+      from: 'Pipe-Up <onboarding@resend.dev>',
       to: process.env.CONTACT_TO_EMAIL,
       subject: `Demo request — ${firstName} ${lastName} at ${company}`,
       text: [
