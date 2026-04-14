@@ -1,0 +1,21 @@
+.section {}
+.steps {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 0; margin-top: 3.5rem;
+  border: 0.5px solid var(--border); border-radius: 16px; overflow: hidden;
+}
+.step { padding: 2.25rem 2rem; border-right: 0.5px solid var(--border); }
+.step:last-child { border-right: none; }
+.num { font-size: 2.8rem; font-weight: 900; letter-spacing: -0.04em; color: rgba(204,85,0,0.18); line-height: 1; margin-bottom: 1rem; }
+.title { font-size: 0.92rem; font-weight: 700; margin-bottom: 0.5rem; }
+.body { font-size: 0.8rem; font-weight: 300; color: var(--text2); line-height: 1.7; }
+@media (max-width: 900px) {
+  .steps { grid-template-columns: 1fr 1fr; }
+  .step:nth-child(2n) { border-right: none; }
+  .step:nth-child(n+3) { border-top: 0.5px solid var(--border); }
+}
+@media (max-width: 480px) {
+  .steps { grid-template-columns: 1fr; }
+  .step { border-right: none; border-bottom: 0.5px solid var(--border); }
+  .step:last-child { border-bottom: none; }
+}
