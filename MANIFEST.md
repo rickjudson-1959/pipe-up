@@ -183,6 +183,14 @@ All other components are stateless and server-rendered. They map over hardcoded 
 | 2026-04-14 | Updated Next.js to v16.2.3, ESLint to v9, eslint-config-next to v16 |
 | 2026-04-14 | Resolved all npm audit vulnerabilities (0 remaining)                 |
 | 2026-04-14 | Initialized git repo, pushed to GitHub, Vercel auto-deploy confirmed |
+| 2026-04-14 | Landing page refinement — SaaS oversight platform positioning        |
+|            | - Added FounderAuthority section (credibility statement)             |
+|            | - Added FinancialOversight/CVI section (real project data mockup)    |
+|            | - Added SecurityStandards trust ribbon (SHA-256, PWA, Permit Parsing)|
+|            | - Hero: ROW background image support with #003366 overlay           |
+|            | - Hero: CTA sub-text ("15-min technical walkthrough")               |
+|            | - Updated section order for conversion flow                          |
+|            | - 44px minimum touch targets on Nav CTA and Contact form inputs      |
 
 ---
 
@@ -190,6 +198,6 @@ All other components are stateless and server-rendered. They map over hardcoded 
 
 - `Features.jsx` and `Audience.jsx` are built but not rendered on the main page — available for future use
 - Resend email integration is coded but commented out in `app/api/contact/route.js`
-- No `public/` directory assets yet (logo images, favicons, etc.)
+- Hero background image (`public/hero-bg.jpg`) not yet provided — overlay color renders in its place
 - ESLint 8→9 was a major version bump; `eslint-config-next@16` expects ESLint 9+ (now aligned)
 - A stale `{app` directory exists at project root (likely accidental — safe to delete)
