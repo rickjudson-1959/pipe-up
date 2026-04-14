@@ -1,0 +1,22 @@
+.section {
+  text-align: center;
+}
+
+.inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.quote {
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  font-weight: 600;
+  line-height: 1.75;
+  color: var(--text);
+  font-style: normal;
+}
+
+@media (max-width: 768px) {
+  .quote {
+    font-size: 1.05rem;
+  }
+}
