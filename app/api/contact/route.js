@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+import { Resend } from 'resend';
 
 export async function POST(request) {
   try {
@@ -13,8 +14,8 @@ export async function POST(request) {
       );
     }
 
-    // ── Option A: Log to console (works immediately, no setup needed) ──
-    console.log('📬 New demo request:', {
+    // Log to console (always — visible in Vercel function logs)
+    console.log('New demo request:', {
       name: `${firstName} ${lastName}`,
       email,
       company,
@@ -23,25 +24,20 @@ export async function POST(request) {
       receivedAt: new Date().toISOString(),
     });
 
-    // ── Option B: Send email via Resend (uncomment when ready) ──
-    // 1. npm install resend
-    // 2. Add RESEND_API_KEY and CONTACT_TO_EMAIL to .env.local
-    // 3. Uncomment below:
-    //
-    // const { Resend } = await import('resend');
-    // const resend = new Resend(process.env.RESEND_API_KEY);
-    // await resend.emails.send({
-    //   from: 'Pipe-Up <noreply@pipe-up.ca>',
-    //   to: process.env.CONTACT_TO_EMAIL,
-    //   subject: `Demo request — ${firstName} ${lastName} at ${company}`,
-    //   text: `
-    //     Name:    ${firstName} ${lastName}
-    //     Email:   ${email}
-    //     Company: ${company}
-    //     Role:    ${role || 'Not specified'}
-    //     Message: ${message || 'None'}
-    //   `,
-    // });
+    // Send email via Resend
+    const resend = new Resend(process.env.RESEND_API_KEY);
+    await resend.emails.send({
+      from: 'Pipe-Up <noreply@pipe-up.ca>',
+      to: process.env.CONTACT_TO_EMAIL,
+      subject: `Demo request — ${firstName} ${lastName} at ${company}`,
+      text: [
+        `Name:    ${firstName} ${lastName}`,
+        `Email:   ${email}`,
+        `Company: ${company}`,
+        `Role:    ${role || 'Not specified'}`,
+        `Message: ${message || 'None'}`,
+      ].join('\n'),
+    });
 
     return NextResponse.json({ success: true }, { status: 200 });
   } catch (err) {
