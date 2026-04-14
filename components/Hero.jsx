@@ -24,6 +24,9 @@ export default function Hero() {
           <Link href="#contact" className="btn-primary">Request a demo →</Link>
           <Link href="#platform" className="btn-ghost">Explore the platform</Link>
         </div>
+        <p className={styles.ctaSub}>
+          15-minute technical walkthrough. No obligation.
+        </p>
         <div className={styles.stats}>
           <div className={styles.stat}>
             <label>Activity types</label>
