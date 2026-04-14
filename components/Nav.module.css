@@ -16,9 +16,12 @@
 .cta {
   font-size: 0.78rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
   background: var(--orange); color: #fff;
-  border: none; border-radius: 6px; padding: 0.5rem 1.3rem;
+  border: none; border-radius: 6px; padding: 0.65rem 1.3rem;
   cursor: pointer; text-decoration: none;
   transition: background 0.2s, transform 0.15s;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
 }
 .cta:hover { background: var(--orange-lt); transform: translateY(-1px); }
 @media (max-width: 900px) {
