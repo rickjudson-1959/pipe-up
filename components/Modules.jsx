@@ -10,7 +10,7 @@ const modules = [
   },
   {
     icon: '🔍',
-    name: 'LEM Reconciliation',
+    name: 'LEM Reconciliation for Billing',
     desc: '4-panel visual comparison: contractor LEM vs. contractor ticket vs. inspector photo vs. costed report. AI-powered OCR extraction with fuzzy name matching and variance flagging.',
     tag: 'AI-powered',
   },

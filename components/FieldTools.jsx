@@ -42,7 +42,7 @@ export default function FieldTools() {
                 <span>● Online — Auto-sync enabled</span>
               </div>
               {[
-                ['Inspector', 'C. Barta'],
+                ['Inspector', 'R. Judson'],
                 ['Date', 'April 14, 2026'],
                 ['Pipeline', 'Mid-Route'],
                 ['Activity', 'Welding — Mainline'],

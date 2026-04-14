@@ -68,7 +68,7 @@ export default function Roles() {
     <section id="roles" className="sec">
       <div className="wrap">
         <p className="label">Who it&apos;s for</p>
-        <h2 className="h2">Nine roles. One platform.<br />Every perspective covered.</h2>
+        <h2 className="h2">Six roles. One platform.<br />Every perspective covered.</h2>
         <div className={styles.grid}>
           {roles.map((r) => (
             <div key={r.title} className={styles.card}>

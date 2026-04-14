@@ -14,9 +14,9 @@ const contracts = [
     desc: 'Track actual field spend against the target price in real time. FEED Intelligence module connects pre-construction estimates to actual LEM spend for ongoing cost performance visibility.',
   },
   {
-    badge: 'Lump Sum / Base Lay',
+    badge: 'Lump Sum',
     color: 'purple',
-    title: 'Lump Sum & Base Lay',
+    title: 'Lump Sum',
     desc: "Progress claims verified against your inspector's independent KP measurement. No more accepting a contractor's claimed progress without an independent field record to back it up.",
   },
 ];
