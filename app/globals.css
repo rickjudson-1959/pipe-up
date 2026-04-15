@@ -16,9 +16,9 @@
   --orange-dim:  rgba(204, 85, 0, 0.14);
   --orange-glow: rgba(204, 85, 0, 0.06);
   --white:       #ffffff;
-  --text:        rgba(255, 255, 255, 0.88);
-  --text2:       rgba(255, 255, 255, 0.55);
-  --text3:       rgba(255, 255, 255, 0.28);
+  --text:        rgba(255, 255, 255, 0.95);
+  --text2:       rgba(255, 255, 255, 0.72);
+  --text3:       rgba(255, 255, 255, 0.42);
   --border:      rgba(255, 255, 255, 0.08);
   --border2:     rgba(255, 255, 255, 0.15);
   --ff:          'Montserrat', system-ui, sans-serif;
@@ -32,7 +32,7 @@ body {
   background: var(--navy-deep);
   color: var(--text);
   font-family: var(--ff);
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
