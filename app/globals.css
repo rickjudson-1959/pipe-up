@@ -16,9 +16,9 @@
   --orange-dim:  rgba(204, 85, 0, 0.14);
   --orange-glow: rgba(204, 85, 0, 0.06);
   --white:       #ffffff;
-  --text:        rgba(255, 255, 255, 0.95);
-  --text2:       rgba(255, 255, 255, 0.72);
-  --text3:       rgba(255, 255, 255, 0.42);
+  --text:        rgba(255, 255, 255, 1);
+  --text2:       rgba(255, 255, 255, 0.85);
+  --text3:       rgba(255, 255, 255, 0.6);
   --border:      rgba(255, 255, 255, 0.08);
   --border2:     rgba(255, 255, 255, 0.15);
   --ff:          'Montserrat', system-ui, sans-serif;
