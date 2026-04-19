@@ -6,7 +6,7 @@ import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import styles from './roi.module.css';
 
-const CALENDLY_URL = 'https://calendly.com/YOUR-HANDLE/pipe-up-walkthrough'; // TODO: replace with real URL
+const CALENDLY_URL = 'https://calendly.com/rjudson-pipe-up/pipe-up-walkthrough';
 
 function fmt(n) {
   const neg = n < 0;
