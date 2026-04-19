@@ -16,14 +16,14 @@ export default function Nav() {
       </Link>
 
       <div className={styles.links}>
-        <Link href="#platform">Platform</Link>
-        <Link href="#ai">AI Features</Link>
-        <Link href="#roles">Who It&apos;s For</Link>
-        <Link href="#field">Field Tools</Link>
-        <Link href="#contact">Demo</Link>
+        <Link href="/#platform">Platform</Link>
+        <Link href="/#ai">AI Features</Link>
+        <Link href="/#roles">Who It&apos;s For</Link>
+        <Link href="/#field">Field Tools</Link>
+        <Link href="/#contact">Demo</Link>
       </div>
 
-      <Link href="#contact" className={styles.cta}>
+      <Link href="/#contact" className={styles.cta}>
         Request a demo
       </Link>
     </nav>

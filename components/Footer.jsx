@@ -14,11 +14,11 @@ export default function Footer() {
         </div>
       </Link>
       <div className={styles.links}>
-        <Link href="#platform">Platform</Link>
-        <Link href="#ai">AI Features</Link>
-        <Link href="#roles">Who It&apos;s For</Link>
-        <Link href="#field">Field Tools</Link>
-        <Link href="#contact">Demo</Link>
+        <Link href="/#platform">Platform</Link>
+        <Link href="/#ai">AI Features</Link>
+        <Link href="/#roles">Who It&apos;s For</Link>
+        <Link href="/#field">Field Tools</Link>
+        <Link href="/#contact">Demo</Link>
         <a href="mailto:rjudson@protonmail.com">Contact</a>
       </div>
       <span className={styles.copy}>© {year} Pipe-Up · pipe-up.ca</span>
