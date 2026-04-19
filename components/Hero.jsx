@@ -23,9 +23,12 @@ export default function Hero() {
         <div className={styles.actions}>
           <Link href="#contact" className="btn-primary">Request a demo →</Link>
           <Link href="#platform" className="btn-ghost">Explore the platform</Link>
+          <Link href="/roi" className="btn-ghost">See the ROI math →</Link>
         </div>
         <p className={styles.ctaSub}>
           15-minute technical walkthrough. No obligation.
+          {' · '}
+          <Link href="/roi" className={styles.roiLink}>See the ROI math →</Link>
         </p>
         <div className={styles.stats}>
           <div className={styles.stat}>

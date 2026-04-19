@@ -61,6 +61,15 @@
   text-align: center;
   animation: fadeUp 0.8s 0.65s ease both;
 }
+.roiLink {
+  color: var(--orange);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+.roiLink:hover {
+  color: var(--orange-lt);
+}
 .stats {
   display: flex; justify-content: center; gap: 4rem;
   margin-top: 4.5rem; padding-top: 2.5rem;
