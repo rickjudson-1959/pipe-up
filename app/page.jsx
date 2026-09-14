@@ -10,6 +10,7 @@ import AISection from '@/components/AISection';
 import SecurityStandards from '@/components/SecurityStandards';
 import Roles from '@/components/Roles';
 import FieldTools from '@/components/FieldTools';
+import PipelineCalculators from '@/components/PipelineCalculators';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 
@@ -29,6 +30,7 @@ export default function Home() {
         <SecurityStandards />
         <Roles />
         <FieldTools />
+        <PipelineCalculators />
         <Contact />
       </main>
       <Footer />

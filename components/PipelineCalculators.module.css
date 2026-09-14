@@ -1,0 +1,21 @@
+.section {
+  padding: 4rem 2rem;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+}
+
+.lead {
+  max-width: 560px;
+}
+
+@media (max-width: 768px) {
+  .inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
