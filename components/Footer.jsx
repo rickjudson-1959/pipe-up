@@ -18,6 +18,13 @@ export default function Footer() {
         <Link href="/#ai">AI Features</Link>
         <Link href="/#roles">Who It&apos;s For</Link>
         <Link href="/#field">Field Tools</Link>
+        <a
+          href="https://pipeline-calculators.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Pipeline calculators
+        </a>
         <Link href="/#contact">Demo</Link>
         <a href="mailto:rjudson@protonmail.com">Contact</a>
       </div>
