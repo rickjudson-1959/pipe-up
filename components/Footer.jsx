@@ -19,11 +19,11 @@ export default function Footer() {
         <Link href="/#roles">Who It&apos;s For</Link>
         <Link href="/#field">Field Tools</Link>
         <a
-          href="https://pipeline-calculators.vercel.app/"
+          href="https://pipeline-calculators.vercel.app/calculators/hydrostatic-test"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Pipeline calculators
+          Free hydrostatic calculator
         </a>
         <Link href="/#contact">Demo</Link>
         <a href="mailto:rjudson@protonmail.com">Contact</a>
