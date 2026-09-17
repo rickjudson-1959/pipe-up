@@ -3,7 +3,7 @@ import styles from './Modules.module.css';
 const modules = [
   {
     icon: '📋',
-    name: 'Inspector Field Journal',
+    name: 'Inspector Field Report',
     desc: '29 activity types, but can be customized to suit your needs. GPS-synced KP, photo capture, digital signatures, quality checklists, and full offline PWA capability for remote field conditions.',
     tag: 'Core module',
     featured: true,

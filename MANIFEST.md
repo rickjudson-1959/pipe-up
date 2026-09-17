@@ -82,7 +82,7 @@ Renders sections in this order:
 2. **Hero** — Headline, sub-copy, 3 CTAs (demo, explore, ROI), stat blocks
 3. **FounderAuthority** — "Built by Construction Managers" credibility statement
 4. **ProblemBand** — Orange banner with pain-point statement
-5. **Modules** — 8-card platform module grid (Inspector Field Journal is featured)
+5. **Modules** — 8-card platform module grid (Inspector Field Report is featured)
 6. **HowItWorks** — 4-step numbered process
 7. **ContractTypes** — T&M / Target Price / Lump Sum cards
 8. **FinancialOversight** — CVI dashboard mockup ($200M vs $217M, phase bars, alerts)
