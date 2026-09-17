@@ -21,7 +21,7 @@ const features = [
   },
   {
     icon: '📝',
-    title: 'Inspector Field Journal',
+    title: 'Inspector Field Report',
     body: 'A purpose-built daily reporting tool for your inspectors. GPS-synced KP, voice input, and structured field data that feeds directly into reconciliation.',
     tag: 'Field tool',
   },
