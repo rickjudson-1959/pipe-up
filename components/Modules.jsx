@@ -4,7 +4,7 @@ const modules = [
   {
     icon: '📋',
     name: 'Inspector Field Journal',
-    desc: '29 activity types with specialized logs. GPS-synced KP, photo capture, digital signatures, quality checklists, and full offline PWA capability for remote field conditions.',
+    desc: '29 activity types, but can be customized to suit your needs. GPS-synced KP, photo capture, digital signatures, quality checklists, and full offline PWA capability for remote field conditions.',
     tag: 'Core module',
     featured: true,
   },
@@ -35,7 +35,7 @@ const modules = [
   {
     icon: '⚡',
     name: 'Welding Chief Dashboard',
-    desc: 'Welder performance tracking, WPS compliance monitoring, repair rate analysis, and AI-generated daily welding reports with digital signature for turnover documentation.',
+    desc: 'Welder performance tracking, welder qualification tracking, WPS compliance monitoring, repair rate analysis, and AI-generated daily welding reports with digital signature for turnover documentation.',
     tag: 'Role-based',
   },
   {

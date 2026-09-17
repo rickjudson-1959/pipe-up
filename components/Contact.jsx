@@ -62,11 +62,11 @@ export default function Contact() {
                   <div className={styles.row}>
                     <div className={styles.fg}>
                       <label htmlFor="firstName">First name</label>
-                      <input id="firstName" name="firstName" type="text" placeholder="Rick" value={form.firstName} onChange={handleChange} required />
+                      <input id="firstName" name="firstName" type="text" placeholder="John" value={form.firstName} onChange={handleChange} required />
                     </div>
                     <div className={styles.fg}>
                       <label htmlFor="lastName">Last name</label>
-                      <input id="lastName" name="lastName" type="text" placeholder="Judson" value={form.lastName} onChange={handleChange} required />
+                      <input id="lastName" name="lastName" type="text" placeholder="Doe" value={form.lastName} onChange={handleChange} required />
                     </div>
                   </div>
                   <div className={styles.fg}>
@@ -76,7 +76,7 @@ export default function Contact() {
                   <div className={styles.row}>
                     <div className={styles.fg}>
                       <label htmlFor="company">Company</label>
-                      <input id="company" name="company" type="text" placeholder="Pembina Pipeline" value={form.company} onChange={handleChange} required />
+                      <input id="company" name="company" type="text" placeholder="Your Company Name" value={form.company} onChange={handleChange} required />
                     </div>
                     <div className={styles.fg}>
                       <label htmlFor="role">Your role</label>

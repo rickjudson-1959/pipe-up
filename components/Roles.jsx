@@ -35,7 +35,7 @@ const roles = [
     pill: 'Field', color: 'field',
     title: 'Field Inspectors',
     points: [
-      '29 activity types with specialized log forms',
+      '29 activity types, but can be customized to suit your needs',
       'Full offline capability — works with no connectivity',
       'OCR ticket scanning — scan contractor ticket, auto-populate data',
       'GPS-tagged photos, digital signatures, AI field guide assistant',
@@ -46,6 +46,7 @@ const roles = [
     title: 'Welding Chiefs',
     points: [
       'Welder performance tracking with repair rate analysis',
+      'Welder qualification tracking',
       'WPS compliance monitoring — material and filler validation',
       'AI-generated daily welding reports with digital signature',
       'Weld data tracking across mainline, tie-in, and section crews',

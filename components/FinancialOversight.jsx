@@ -46,7 +46,7 @@ export default function FinancialOversight() {
               <div>
                 <div className={styles.dashLabel}>Capital Variance Index</div>
                 <div className={styles.dashSub}>
-                  Eagle Mountain Woodfibre Gas Pipeline · 49% Elapsed
+                  Northern Mainline Gas Pipeline · 49% Elapsed
                 </div>
               </div>
               <span className={`${styles.statusBadge} ${styles.statusAmber}`}>
