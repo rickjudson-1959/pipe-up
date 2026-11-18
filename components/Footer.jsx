@@ -27,6 +27,8 @@ export default function Footer() {
         </a>
         <Link href="/#contact">Demo</Link>
         <a href="mailto:rjudson@protonmail.com">Contact</a>
+        <Link href="/privacy">Privacy</Link>
+        <Link href="/terms">Terms</Link>
       </div>
       <span className={styles.copy}>© {year} Pipe-Up · pipe-up.ca</span>
     </footer>

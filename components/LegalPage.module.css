@@ -1,0 +1,15 @@
+.main { max-width: 860px; margin: 0 auto; padding: 8rem 1.5rem 4rem; }
+.eyebrow { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--orange); }
+.title { font-size: clamp(1.8rem, 3vw, 2.4rem); font-weight: 800; margin: 0.5rem 0 0.25rem; }
+.meta { font-size: 0.75rem; color: var(--text3); margin-bottom: 2.5rem; }
+.body { font-size: 0.85rem; line-height: 1.75; color: var(--text2); font-weight: 400; }
+.body h2 { font-size: 1.05rem; font-weight: 700; color: var(--white); margin: 2.25rem 0 0.6rem; }
+.body p { margin: 0 0 1rem; }
+.body ul { margin: 0 0 1rem 1.25rem; padding: 0; }
+.body li { margin-bottom: 0.4rem; }
+.body a { color: var(--orange-lt); }
+.body strong { color: var(--white); font-weight: 600; }
+.table { width: 100%; border-collapse: collapse; margin: 0 0 1rem; font-size: 0.78rem; }
+.table th, .table td { text-align: left; padding: 0.55rem 0.75rem 0.55rem 0; border-bottom: 0.5px solid var(--border2); vertical-align: top; }
+.table th { color: var(--white); font-weight: 600; }
+@media (max-width: 700px) { .main { padding: 6.5rem 1rem 3rem; } .table { font-size: 0.72rem; } }
