@@ -22,9 +22,54 @@
   min-height: 44px;
   display: inline-flex;
   align-items: center;
+  white-space: nowrap;   /* one line, never wrapped onto two */
 }
 .cta:hover { background: var(--orange-lt); transform: translateY(-1px); }
+.right { display: flex; align-items: center; gap: 0.6rem; }
+.menuButton {
+  display: none; align-items: center; justify-content: center;
+  width: 44px; height: 44px; padding: 0;
+  background: transparent; border: 0.5px solid var(--border2); border-radius: 6px; cursor: pointer;
+}
+.bars, .bars::before, .bars::after {
+  display: block; width: 20px; height: 2px; background: var(--white); border-radius: 1px;
+  transition: transform 0.2s, background 0.2s;
+}
+.bars { position: relative; }
+.bars::before, .bars::after { content: ''; position: absolute; left: 0; }
+.bars::before { top: -6px; }
+.bars::after { top: 6px; }
+.barsOpen { background: transparent; }
+.barsOpen::before { transform: translateY(6px) rotate(45deg); }
+.barsOpen::after { transform: translateY(-6px) rotate(-45deg); }
+.menu {
+  position: absolute; top: 64px; left: 0; right: 0;
+  display: none; flex-direction: column;
+  background: var(--navy-deep);   /* solid: the page never shows through the open menu */
+  border-bottom: 0.5px solid var(--border2);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.45);
+  padding: 0.5rem 1.5rem 1rem;
+}
+.menu a {
+  font-size: 0.9rem; font-weight: 500; color: var(--text2); text-decoration: none;
+  padding: 0.85rem 0; border-bottom: 0.5px solid var(--border);
+}
+.menu a:last-child { border-bottom: none; }
+.menu a:hover { color: var(--white); }
 @media (max-width: 900px) {
   .nav { padding: 0 1.5rem; }
   .links { display: none; }
+  .menuButton { display: inline-flex; }
+  .menu { display: flex; }
+}
+@media (max-width: 420px) {
+  .nav { padding: 0 1rem; }
+  .brand { gap: 8px; }
+  .brandName { font-size: 1rem; }
+  .brandTag { display: none; }   /* too narrow for the tagline: it would wrap onto three lines */
+  .cta { font-size: 0.66rem; letter-spacing: 0.04em; padding: 0.55rem 0.8rem; }
+}
+.brandName { white-space: nowrap; }
+@media (max-width: 360px) {
+  .brandText { display: none; }   /* smallest phones: the logo alone, so the name never breaks onto two lines */
 }

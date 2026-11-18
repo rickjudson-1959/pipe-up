@@ -11,7 +11,7 @@ export default function TermsPage() {
   return (
     <LegalPage title="Terms of Use">
       <p>
-        These terms apply to the Pipe-Up website (pipe-up.ca) and the Pipe-Up platform (app.pipe-up.ca), provided by {LEGAL_NAME}
+        These terms apply to the Pipe-Up website (pipe-up.ca) and the Pipe-Up platform (app.pipe-up.ca), provided by {LEGAL_NAME}{' '}
         (&quot;Pipe-Up&quot;, &quot;we&quot;, &quot;us&quot;). By using either, you agree to them. If your company has a signed agreement
         with us, that agreement governs where it differs from these terms.
       </p>

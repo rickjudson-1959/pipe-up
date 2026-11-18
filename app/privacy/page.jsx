@@ -12,7 +12,7 @@ export default function PrivacyPage() {
   return (
     <LegalPage title="Privacy Policy">
       <p>
-        This policy explains how {LEGAL_NAME} (&quot;Pipe-Up&quot;, &quot;we&quot;, &quot;us&quot;) handles personal information on this website
+        This policy explains how {LEGAL_NAME}{' '}(&quot;Pipe-Up&quot;, &quot;we&quot;, &quot;us&quot;) handles personal information on this website
         (pipe-up.ca) and in the Pipe-Up platform (app.pipe-up.ca). We follow Canada&apos;s Personal Information Protection and Electronic
         Documents Act (PIPEDA) and {GOVERNING_PROVINCE}&apos;s Personal Information Protection Act.
       </p>
